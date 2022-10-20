@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/Favicon R.png">
     <title>Repercutter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
     <div>
-        <nav class="navbar navbar-expand-md border-3 border-bottom border-info">
+        <nav class="navbar navbar-expand-md border-3 border-bottom border-info mb-3">
                 <a href="../index.html" class="navbar-brand mx-4">Repercutter</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Menu_hamburguesa">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="Menu_hamburguesa" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-3">
-                        <li class="nav-item"><a class="nav-link" href="./radios.html">Radios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./canales.html">Canales</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./diarios.html">Diarios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./secciones.html">Secciones</a></li> 
+                    <ul class="navbar-nav ms-3" id="menu--header">
+                        <li class="nav-item"><a class="nav-link" href="../Pages/radios.html">Radios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Pages/canales.html">Canales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Pages/diarios.html">Diarios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Pages/secciones.html">Secciones</a>
+                            <ul class="submenu--header">
+                                <li class="nav-item"><a class="nav-link" href="#">Política</a>
+                                <li class="nav-item"><a class="nav-link" href="#">Economía</a>
+                                <li class="nav-item"><a class="nav-link" href="#">Sociedad</a>
+                                <li class="nav-item"><a class="nav-link" href="#">Deportes</a>
+                            </ul> 
+                        </li> 
                     </ul>
                     <ul class="navbar-nav ms-3">
-                        <li class="nav-item"><a class="nav-link text-nowrap" href="./login.html">Iniciar sesión</a></li>
-                        <li class="nav-item"><a class="nav-link text-nowrap" href="./solicitud_suscripcion.html">Suscribirme</a></li>
+                        <li class="nav-item"><a class="nav-link text-nowrap" href="../Pages/login.html">Iniciar sesión</a></li>
+                        <li class="nav-item"><a class="nav-link text-nowrap" href="../Pages/solicitud_suscripcion.html">Suscribirme</a></li>
                 </div>
     
         </nav>
@@ -37,10 +45,14 @@
             <h3 class="lead m-0 mb-4 text-center row justify-content-center">Podes tener acceso a todo el contenido de Reppercutter, con newsletters y alertas personalizadas.</h3>
         </div>
         
-        <div class="container-fluid row p-0 m-0 justify-content-around">
-            <button type="button" class="col-md-5 col-sm-12 btn btn-outline-success"><h3>$500 por mes</h3> <hr> Vas a tener acceso a SERVICIO 1, 2 y 3</button>
-            <button type="button" class="col-md-5 col-sm-12 btn btn-outline-success"><h3>$1000 por mes</h3> <hr> Vas a tener acceso a SERVICIO 1, 2, 3, 4 y 5</button>
+    <section class="botones--suscripcion">
+        <div class="container-fluid row justify-content-center m-0 p-3">
+            <button type="button" class="col-md-5 col-sm-12 btn btn-outline-success mx-2 boton-sub-1"><h3>$500 por mes</h3> <hr> Vas a tener acceso a SERVICIO 1, 2 y 3</button>
+
+            <button type="button" class="col-md-5 col-sm-12 btn btn-outline-success mx-2 boton-sub-2"><h3>$1000 por mes</h3> <hr> Vas a tener acceso a SERVICIO A, B y C</button>
         </div>
+    </section>
+
     </span>
 </main>
 
@@ -86,7 +98,7 @@
                         <a class="text-muted text-decoration-none" href="#">WhatsApp</a>
                     </div>
                     <div class="mb-2">
-                        <a class="text-muted text-decoration-none" href=".contacto.html">Enviá un correo</a>
+                        <a class="text-muted text-decoration-none" href="../contacto.html">Enviá un correo</a>
                     </div>
                 </div> 
                 

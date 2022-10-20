@@ -8,20 +8,27 @@ html {
 
 .notas--prioridad {
     display: grid;
-    grid-row-gap: 15px;
     grid-template-areas: 
     "nota--principal nota--sec1"
-    "nota--principal nota--sec2"
+    "nota--principal none"
+    "nota--principal nota--sec2";
+    grid-template-rows: 200px 5% 200px;
+    grid-template-columns: 65% 35%;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+
 }
 
-@media (max-width: 780px) {
+@media (max-width: 576px) {
     .notas--prioridad {
         display: grid;
-        grid-row-gap: 15px;
         grid-template-areas: 
         "nota--principal"
         "nota--sec1"
-        "nota--sec2"
+        "nota--sec2";
+        grid-template-rows: 250px 150px 150px;
+        grid-template-columns: 90%;
+        justify-content: center;
     }
 }
 
@@ -47,7 +54,7 @@ html {
     background-color: rgb(166, 184, 0);
     border-style: dotted;
 
-}
+} 
 
 .submenu--header {
     visibility: hidden;
@@ -69,4 +76,16 @@ html {
     visibility: visible;
     opacity: 1;
     
+}
+
+@media (max-width: 768px) {
+    .boton-sub-1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boton-sub-2 {
+        margin-top: 10px;
+    }
 }

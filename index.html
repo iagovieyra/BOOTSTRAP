@@ -12,7 +12,7 @@
 <body>
 
 <div>
-    <nav class="navbar navbar-expand-md border-3 border-bottom border-info">
+    <nav class="navbar navbar-expand-md border-3 border-bottom border-info mb-3">
             <a href="index.html" class="navbar-brand mx-4">Repercutter</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Menu_hamburguesa">
                 <span class="navbar-toggler-icon"></span>
@@ -41,22 +41,25 @@
 
     <main>
         <div class="container">
-            <div class="row notas--prioridad">
-                <div class="nota--principal">
-                    NOTA PRINCIPAL
-                </div>
-                <div>
-                    <div class="nota--sec1">
-                        NOTA SECUNDARIA 1
-                    </div>
+            <section class="row notas--prioridad mb-5 mt-4">
 
-                    <div class="nota--sec2">
-                        NOTA SECUNDARIA 2
-                    </div>
-                </div>
-            </div>
+                <div class="nota--principal">NOTA PRINCIPAL</div>
+
+                <div class="nota--sec1">NOTA SECUNDARIA 1</div>
+
+                <div class="nota--sec2">NOTA SECUNDARIA 2</div>
+      
+            </section>
             
         </div>
+
+        <div class="input-group mb-3 p-3">
+            <input type="search" class="form-control" placeholder="Buscador por etiquetas (Nombre, tema, palabra clave, medio de comunicacion, etc.)" aria-label="Buscador etiquetas" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary" type="button">Buscar</button>
+            </div>
+        </div>
+
    
     </main>
 
