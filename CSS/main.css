@@ -41,18 +41,17 @@ html {
     box-shadow: -3px 3px 5px 1px gray;
 }
 
-.titulo-principal h6 {
+.titulo-principal p {
     font-weight: lighter;
+    font-size: small;
 }
 
 .titulo-principal h3 {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    .titulo-principal h6  {
-        visibility: hidden;
-    }
+.titulo--secundario {
+    padding-right: 5px;
 }
 
 
@@ -147,8 +146,31 @@ html {
     .img-sec1, .img-sec2 {
         margin: 10px 0px;
         padding: 0;
-        width: 50%;
         height: 85%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .nota--sec1 {
+        display: grid;
+        grid-template-areas: 
+        "img-sec-1 nota--principal";
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 576px) {
+    .nota--sec2 {
+        display: grid;
+        grid-template-areas: 
+        "img-sec-2 nota--principal";
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
+        justify-content: space-between;
 
     }
 }
