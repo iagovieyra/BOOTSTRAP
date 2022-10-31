@@ -74,18 +74,23 @@ html {
 .submenu--header {
     visibility: hidden;
     opacity: 0;
-    background-color: rgb(172, 33, 172);
+    background-color: #48cfad;
     position: absolute;
     min-width: 110px;
     list-style: none;
     transition: opacity .3s;
     padding-left: 7px;
-    z-index: 1
+    z-index: 1;
+    border-radius: 10px;
 }
 
 .submenu--header li a {
     display: block;
     padding: 15px;
+}
+
+.submenu--header li:hover {
+    font-weight: bolder;
 }
 
 #menu--header li:hover .submenu--header{
