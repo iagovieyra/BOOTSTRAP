@@ -174,3 +174,15 @@ html {
 
     }
 }
+
+.cards--medios {
+    background-color: rgb(240, 238, 238);
+    border-radius: 10px;
+    box-shadow: -3px 3px 5px 1px gray;
+    transition: all 0.5s;       
+ }
+
+.cards--medios:hover {
+    background-color: #48cfad;
+ }
+ 
