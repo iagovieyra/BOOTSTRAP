@@ -183,4 +183,15 @@ form {
     grid-template-columns: 90%;
     justify-content: center; } }
 
+@media (max-width: 576px) {
+  .titulo--secundario {
+    display: grid;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold; } }
+
+@media (max-width: 576px) {
+  .nota--principal p, .nota--sec1 p, .nota--sec2 p {
+    font-size: 0; } }
+
 /* Fin Media queries */
