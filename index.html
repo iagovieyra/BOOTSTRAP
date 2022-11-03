@@ -12,9 +12,10 @@
 </head>
 <body>
 
-<div>
+<div> 
+    
     <nav class="navbar navbar-expand-md border-3 border-bottom border-info mb-3">
-            <a href="index.html" class="navbar-brand mx-4">Repercutter</a>
+            <a href="index.html" class="navbar-brand mx-4"> <img src="./Images/Logo largo.png" class="logo--header d-inline-block align-top" alt=""> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Menu_hamburguesa">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,6 +42,15 @@
 </div>
 
     <main>
+
+        <div class="input-group mb-3 p-3 animate__animated animate__backInLeft">
+            <input type="search" class="form-control" placeholder="Buscador por etiquetas (Nombre, tema, palabra clave, medio de comunicacion, etc.)" aria-label="Buscador etiquetas" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary" type="button">Buscar</button>
+            </div>
+        </div>
+
+
         <div class="container">
             <section class="row notas--prioridad mb-5 mt-4 animate__animated animate__fadeIn">
 
@@ -57,27 +67,31 @@
 
                 <div class="card nota--sec1">
                     <div class="img-sec1"></div>
-                    <h5 class="card-title titulo--secundario"> Morales: "Soy candidato a Presidente"</h5>
+                    <h5 class="titulo--secundario"> Morales: "Soy candidato a Presidente"</h5>
                 </div>
 
                 <div class="card nota--sec2">
                     <div class="img-sec2"></div>
-                    <h5 class="card-title titulo--secundario"> Prat-Gay: "Está todo más desordenado que cuando asumió Massa"</h5>
-
-
+                    <h5 class="titulo--secundario"> Prat-Gay: "Está todo más desordenado que cuando asumió Massa"</h5>
                 </div>
       
             </section>
         </div>
 
-        <div class="input-group mb-3 p-3 animate__animated animate__backInLeft">
-            <input type="search" class="form-control" placeholder="Buscador por etiquetas (Nombre, tema, palabra clave, medio de comunicacion, etc.)" aria-label="Buscador etiquetas" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-primary" type="button">Buscar</button>
-            </div>
+        <div>
+        <span class="badge bg-success pastilla--tags">#SeEstáHablandoDe</span>
         </div>
 
-   
+        <div class="container d-flex justify-content-around mb-3 barra--etiquetas flex-wrap">
+            <button type="button" class="btn btn-success btn-sm">Alberto Fernández</button>
+            <button type="button" class="btn btn-success btn-sm">Atentado a CFK</button>
+            <button type="button" class="btn btn-success btn-sm">Inflación</button>
+            <button type="button" class="btn btn-success btn-sm">Brasil</button>
+            <button type="button" class="btn btn-success btn-sm">Patricia Bullrich</button>
+            <button type="button" class="btn btn-success btn-sm">Interna en JxC</button>
+        </div>
+
+  
     </main>
 
 <footer class="footer">

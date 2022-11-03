@@ -1,0 +1,278 @@
+/*Inicio variables sass*/
+
+$sombra-cards: -3px 3px 5px 1px gray;
+$color-violeta: rgba(149, 81, 212, 0.788);
+$color-menta: #48cfad;
+$color-gris: rgb(240, 238, 238);
+$borde: 10px;
+
+/*Fin variables sass*/
+
+/* Inicio Sass*/
+
+html {
+    height: 100%;
+}
+
+.navbar {
+    background-color: $color-violeta;
+}
+
+.logo--header {
+    width: 216px;
+    height: 29px;
+}
+
+#menu--header {
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 2px 2px 15px #3b3636a9;
+}
+
+.notas--prioridad {
+    display: grid;
+    grid-template-areas: 
+    "nota--principal nota--sec1"
+    "nota--principal none"
+    "nota--principal nota--sec2";
+    grid-template-rows: 200px 5% 200px;
+    grid-template-columns: 65% 35%;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+
+.nota--principal {
+    grid-area: nota--principal;
+}
+
+.nota--principal {
+    background-color: $color-gris;
+    border-radius: $borde;
+    box-shadow: $sombra-cards;
+}
+
+.nota--sec1 {
+    grid-area: nota--sec1;
+    @extend .nota--principal;
+
+}
+
+.nota--sec2 {
+    grid-area: nota--sec2;
+    @extend .nota--principal;
+} 
+
+.titulo-principal {
+
+    p {
+    font-weight: lighter;
+    font-size: small;
+    }
+
+    h3 {
+        font-weight: bold; 
+    }
+}
+
+.titulo--secundario {
+    padding-right: 5px;
+}
+
+.submenu--header {
+    visibility: hidden;
+    opacity: 0;
+    background-color: $color-menta;
+    position: absolute;
+    min-width: 110px;
+    list-style: none;
+    transition: opacity .3s;
+    padding-left: 7px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.submenu--header li a {
+    display: block;
+    padding: 15px;
+}
+
+.submenu--header li:hover {
+    font-weight: bolder;
+}
+
+#menu--header li:hover .submenu--header{
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+.img{
+  margin:10px auto;
+  border-radius:5px;
+  border: 1px solid #999;
+  padding:13px;
+  width:100%;
+  height:70%;
+  background-repeat:no-repeat;
+  background:url(../Images/cristian-ritondo.jpeg);
+  background-size: cover;
+  }
+
+
+.img-sec1{
+    @extend .img;
+    background:url(../Images/Gerardo-Morales.jpg);
+    background-size: cover;
+    }
+
+.img-sec2{
+    @extend .img;
+    background: url(../Images/prat-gay.jpg);
+    background-size: cover;
+        }
+
+
+.cards--medios {
+    background-color: $color-gris;
+    border-radius: $borde;
+    box-shadow: $sombra-cards;
+    transition: all 0.5s;      
+        
+      &:hover {
+        background-color: $color-menta;
+
+      }
+ }
+
+
+/* Inicio lista etiquetas*/ 
+
+.barra--etiquetas {
+    animation: headShake;
+    animation-duration: 2s;
+}
+
+.pastilla--tags {
+    background-color: $color-violeta !important;
+    margin: 10px;
+    font-size: medium;
+}
+
+/* Fin lista etiquetas*/ 
+
+
+
+
+
+
+/* Inicio Form inicio sesion*/
+
+ .global-container{
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form{
+	padding-top: 10px;
+	font-size: 14px;
+	margin-top: 30px;
+
+    a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: $color-menta;
+     }
+}
+
+.card-title {
+    font-weight:300;
+}
+
+#boton--ingresar {
+	font-size: 14px;
+	margin-top:20px;
+}
+
+
+.login-form { 
+	width:330px;
+	margin:20px;
+    box-shadow: $sombra-cards;
+}
+
+.sign-up {
+	text-align:center;
+	padding:20px 0 0;
+}
+
+
+/* Fin Form inicio sesion*/
+
+ /* Fin Sass*/
+
+ /* Inicio Media queries */
+
+ 
+@media (max-width: 576px) {
+    .img-sec1, .img-sec2 {
+        margin: 10px 0px;
+        padding: 0;
+        height: 85%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .nota--sec1 {
+        display: grid;
+        grid-template-areas: 
+        "img-sec-1 nota--principal";
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 576px) {
+    .nota--sec2 {
+        display: grid;
+        grid-template-areas: 
+        "img-sec-2 nota--principal";
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
+        justify-content: space-between;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .boton-sub-1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boton-sub-2 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .notas--prioridad {
+        display: grid;
+        grid-template-areas: 
+        "nota--principal"
+        "nota--sec1"
+        "nota--sec2";
+        grid-template-rows: 250px 150px 150px;
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+}
+
+
+ /* Fin Media queries */

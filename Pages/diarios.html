@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="Images/Favicon R.png">
+        <link rel="shortcut icon" href="../Images/Favicon R.png">
         <title>Repercutter</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="../CSS/main.css">
@@ -14,105 +14,85 @@
 <body>
     <div>
         <nav class="navbar navbar-expand-md border-3 border-bottom border-info mb-3">
-                <a href="../index.html" class="navbar-brand mx-4">Repercutter</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Menu_hamburguesa">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="Menu_hamburguesa" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-3" id="menu--header">
-                        <li class="nav-item"><a class="nav-link" href="../Pages/radios.html">Radios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../Pages/canales.html">Canales</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../Pages/diarios.html">Diarios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../Pages/secciones.html">Secciones</a>
-                            <ul class="submenu--header">
-                                <li class="nav-item"><a class="nav-link" href="#">Política</a>
-                                <li class="nav-item"><a class="nav-link" href="#">Economía</a>
-                                <li class="nav-item"><a class="nav-link" href="#">Sociedad</a>
-                                <li class="nav-item"><a class="nav-link" href="#">Deportes</a>
-                            </ul> 
-                        </li> 
-                    </ul>
-                    <ul class="navbar-nav ms-3">
-                        <li class="nav-item"><a class="nav-link text-nowrap" href="../Pages/login.html">Iniciar sesión</a></li>
-                        <li class="nav-item"><a class="nav-link text-nowrap" href="../Pages/solicitud_suscripcion.html">Suscribirme</a></li>
-                </div>
-    
-        </nav>
+            <a href="../index.html" class="navbar-brand mx-4"> <img src="../Images/Logo largo.png" class="logo--header d-inline-block align-top" alt=""> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Menu_hamburguesa">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Menu_hamburguesa" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-3" id="menu--header">
+                    <li class="nav-item"><a class="nav-link" href="../Pages/radios.html">Radios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Pages/canales.html">Canales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Pages/diarios.html">Diarios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Pages/secciones.html">Secciones</a>
+                        <ul class="submenu--header">
+                            <li class="nav-item"><a class="nav-link" href="#">Política</a>
+                            <li class="nav-item"><a class="nav-link" href="#">Economía</a>
+                            <li class="nav-item"><a class="nav-link" href="#">Sociedad</a>
+                            <li class="nav-item"><a class="nav-link" href="#">Deportes</a>
+                        </ul> 
+                    </li> 
+                </ul>
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item"><a class="nav-link text-nowrap" href="../Pages/login.html">Iniciar sesión</a></li>
+                    <li class="nav-item"><a class="nav-link text-nowrap" href="../Pages/solicitud_suscripcion.html">Suscribirme</a></li>
+            </div>
+
+    </nav>
     </div>
 
 <main>
 
+    <div class="input-group mb-3 p-3 animate__animated animate__backInLeft">
+        <input type="search" class="form-control" placeholder="Buscador por etiquetas (Nombre, tema, palabra clave, medio de comunicacion, etc.)" aria-label="Buscador etiquetas" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-primary" type="button">Buscar</button>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row text-center mb-5">
             <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-               <img class="card-img-top" src="../Images/channels4_profile.jpg" alt="">
-                <h5 class="card-title">Radio Mitre</h5>
+               <img class="card-img-top" src="../Images/clarin.svg" alt="">
+                <h5 class="card-title">Clarín</h5>
             </div>
 
             <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                <img class="card-img-top" src="../Images/continental.webp" alt="">
-                <h5 class="card-title">Radio Continental</h5>
+                <img class="card-img-top" src="../Images/diario la nacion.png" alt="">
+                <h5 class="card-title">La Nación</h5>
             </div>
 
             <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                <img class="card-img-top" src="../Images/rivadavia.jpg" alt="">
-                <h5 class="card-title">Radio Rivadavia</h5>
+                <img class="card-img-top" src="../Images/pagina_12.jpg" alt="">
+                <h5 class="card-title">Página 12</h5>
             </div>
             <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                <img class="card-img-top" src="../Images/radio 10.webp" alt="">
-                 <h5 class="card-title">Radio 10</h5>
+                <img class="card-img-top" src="../Images/diario perfil.png" alt="">
+                 <h5 class="card-title">Perfil</h5>
              </div>
  
              <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                 <img class="card-img-top" src="../Images/urbana play.jpg" alt="">
-                 <h5 class="card-title">Urbana Play</h5>
+                 <img class="card-img-top" src="../Images/ambito.png" alt="">
+                 <h5 class="card-title">Ámbito Financiero</h5>
              </div>
  
              <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                 <img class="card-img-top" src="../Images/radio con vos.jpg" alt="">
-                 <h5 class="card-title">Radio con Vos</h5>
+                 <img class="card-img-top" src="../Images/Tiempo Argentino.png" alt="">
+                 <h5 class="card-title">Tiempo Argentino</h5>
              </div>
              <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                <img class="card-img-top" src="../Images/la red.png" alt="">
-                 <h5 class="card-title">Radio La Red</h5>
-             </div>
- 
-             <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                 <img class="card-img-top" src="../Images/am 750.jpg" alt="">
-                 <h5 class="card-title">AM 750</h5>
+                <img class="card-img-top" src="../Images/diario cronica.jpg" alt="">
+                 <h5 class="card-title">Crónica</h5>
              </div>
  
              <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                 <img class="card-img-top" src="../Images/del plata.png" alt="">
-                 <h5 class="card-title">Radio Del Plata</h5>
+                 <img class="card-img-top" src="../Images/popular.jpg" alt="">
+                 <h5 class="card-title">Popular</h5>
              </div>
+ 
              <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                 <img class="card-img-top" src="../Images/el destape.png" alt="">
-                  <h5 class="card-title">El Destape Radio</h5>
-              </div>
-  
-              <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                  <img class="card-img-top" src="../Images/futurock.png" alt="">
-                  <h5 class="card-title">Futurock</h5>
-              </div>
-  
-              <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                  <img class="card-img-top" src="../Images/am990.webp" alt="">
-                  <h5 class="card-title">AM 990</h5>
-              </div>
-              <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                <img class="card-img-top" src="../Images/delta.png" alt="">
-                <h5 class="card-title">Delta</h5>
-            </div>
-
-            <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                <img class="card-img-top" src="../Images/metro.webp" alt="">
-                <h5 class="card-title">Metro 95.1</h5>
-            </div>
-            <div class="card col-lg-4 col-md-6 col-sm-12 cards--medios">
-                <img class="card-img-top" src="../Images/perfil.png" alt="">
-                <h5 class="card-title">Radio Perfil</h5>
-            </div>
+                 <img class="card-img-top" src="../Images/ole.png" alt="">
+                 <h5 class="card-title">Olé</h5>
+             </div>
         </div>
 
     </div>
