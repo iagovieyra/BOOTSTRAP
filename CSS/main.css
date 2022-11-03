@@ -7988,6 +7988,8 @@ textarea.form-control-lg {
   padding: 10px 30px 10px 30px; }
   .cards--seccion:hover {
     background-color: #48cfad; }
+  .cards--seccion:hover {
+    cursor: pointer; }
 
 .barra--secciones {
   gap: 10px; }
@@ -8005,6 +8007,8 @@ textarea.form-control-lg {
   background-color: rgba(149, 81, 212, 0.788) !important;
   margin: 10px;
   font-size: medium; }
+  .pastilla--tags:hover {
+    cursor: default; }
 
 /* Fin lista etiquetas*/
 /* Inicio Form inicio sesion*/

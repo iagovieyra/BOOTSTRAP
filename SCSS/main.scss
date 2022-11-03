@@ -170,6 +170,9 @@ $theme-colors: (
 
     @include cards--rp();
     padding: 10px 30px 10px 30px;
+        &:hover {
+            cursor: pointer;
+        }
 }
 
 .barra--secciones {
@@ -192,6 +195,9 @@ $theme-colors: (
     background-color: $color-violeta !important;
     margin: 10px;
     font-size: medium;
+        &:hover {
+            cursor: default;
+        }
 }
 
 /* Fin lista etiquetas*/ 
