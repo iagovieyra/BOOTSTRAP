@@ -8,10 +8,22 @@ $borde: 10px;
 
 /*Fin variables sass*/
 
+/*INICIO CORRECCIONES BOOTSTRAP*/ 
+
+$theme-colors: (
+    "success": $color-menta
+    );
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+/*FIN CORRECCIONES BOOTSTRAP*/ 
+
 /* Inicio Sass*/
 
-html {
-    height: 100%;
+
+* {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .navbar {
@@ -43,13 +55,18 @@ html {
 
 
 .nota--principal {
-    grid-area: nota--principal;
-}
-
-.nota--principal {
     background-color: $color-gris;
     border-radius: $borde;
     box-shadow: $sombra-cards;
+        &:hover {
+            transform: scale(0.9);
+            cursor: pointer;
+        }
+}
+
+
+.nota--principal {
+    grid-area: nota--principal;
 }
 
 .nota--sec1 {
@@ -60,23 +77,26 @@ html {
 
 .nota--sec2 {
     grid-area: nota--sec2;
-    @extend .nota--principal;
+    @extend .nota--principal; 
 } 
+
 
 .titulo-principal {
 
     p {
-    font-weight: lighter;
+    font-weight: light;
     font-size: small;
     }
 
     h3 {
         font-weight: bold; 
+        margin-bottom: 3px;
     }
 }
 
 .titulo--secundario {
     padding-right: 5px;
+    font-weight: bold;
 }
 
 .submenu--header {
@@ -90,21 +110,19 @@ html {
     padding-left: 7px;
     z-index: 1;
     border-radius: 10px;
-}
 
-.submenu--header li a {
-    display: block;
-    padding: 15px;
-}
+        li a {
+         display: block;
+         padding: 15px;
+             }
 
-.submenu--header li:hover {
-    font-weight: bolder;
+        &:hover {
+        font-weight: bolder;}
 }
 
 #menu--header li:hover .submenu--header{
     visibility: visible;
-    opacity: 1;
-    
+    opacity: 1;  
 }
 
 .img{
@@ -133,7 +151,7 @@ html {
         }
 
 
-.cards--medios {
+@mixin cards--rp {
     background-color: $color-gris;
     border-radius: $borde;
     box-shadow: $sombra-cards;
@@ -141,16 +159,33 @@ html {
         
       &:hover {
         background-color: $color-menta;
+     }
+  }
 
-      }
+.cards--medios {
+ @include cards--rp();
  }
 
+.cards--seccion {
+
+    @include cards--rp();
+    padding: 10px 30px 10px 30px;
+}
+
+.barra--secciones {
+    gap: 10px;
+}
+
+.txt--suscripcion {
+    font-weight: bold;
+}
 
 /* Inicio lista etiquetas*/ 
 
 .barra--etiquetas {
     animation: headShake;
     animation-duration: 2s;
+    gap: 10px;
 }
 
 .pastilla--tags {
@@ -160,9 +195,6 @@ html {
 }
 
 /* Fin lista etiquetas*/ 
-
-
-
 
 
 
@@ -188,7 +220,7 @@ form{
 }
 
 .card-title {
-    font-weight:300;
+    font-weight:bold;
 }
 
 #boton--ingresar {
@@ -295,3 +327,4 @@ form{
 
 
  /* Fin Media queries */
+
